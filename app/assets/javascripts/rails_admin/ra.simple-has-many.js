@@ -107,11 +107,11 @@
               url: delete_path,
               dataType: "json",
               data: {"_method":"delete"},
-              complete: function(){
-                  widget._deSelect($(':selected', widget.selection));
+              success: function(){
+                widget._deSelect($(':selected', widget.selection));
               },
-              error: function() {
-                alert("Error: Could not delete dimension, please try again")
+              error: function(e) {
+                console.log(e)
               }
           });
 
