@@ -107,7 +107,7 @@
               url: delete_path,
               dataType: "json",
               data: {"_method":"delete"},
-              success: function(){
+              complete: function(){
                 widget._deSelect($(':selected', widget.selection));
               },
               error: function(e) {
