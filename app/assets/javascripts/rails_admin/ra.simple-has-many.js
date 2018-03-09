@@ -98,8 +98,8 @@
         model_name = this.options.model_name
         delete_path = Routes.rails_admin_delete_path(model_name, selected_id)
 
-        var answer = confirm ("Are you sure you want to delete '" + title + "' ? " +
-            "\nThis will take effect immediately and CANNOT be undone");
+        var answer = confirm ("Seguro que quieres eliminar '" + title + "' ? " +
+            "\nNo puedes revertir esta acción");
         if (answer)
         {
           $.ajax({
